@@ -5,9 +5,257 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#1F2833 ; 
+  height: auto;
+  width:auto;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-container {
+  height:20px;
+  width:auto;
+  display:flex;
+  justify-content:space-between;
+
+  margin-top:20px;
+  margin-left: 120px;
+  margin-right:120px;
+  
+  
+}
+.main-container {
+  
+  display:inline-block;
+  justify-content: center;
+}
+.list-container {
+  
+  margin-top:150px;
+  margin-left:70px;
+  display:block;
+  text-align: center;
+  margin-right:70px;
+      
+  
+}
+.list-container li {
+  
+  font-family:sans-serif;
+  font-size: 20px;
+  color:black;
+  margin-top:10px;
+  font-weight:700;
+  text-align:justify;
+  list-style-position: inside;
+  text-overflow:clip;
+      
+}
+
+.logoReact{
+  min-height:80px;
+}
+.switch {
+position: relative;
+margin-top:28px;
+display: inline-block;
+width: 60px;
+height: 24px;
+outline: none;
+}
+.switch input {
+position: absolute;
+top: -99999px;
+left: -99999px;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 4px;
+bottom: 3px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #2196F3;
+right:3px;
+left: 5px;
+}
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.form-container{
+left:50%;
+top:50%;
+margin:auto;
+margin-top:120px;
+
+display:flex;
+width: 357px;
+height: 402px;
+justify-content:center;
+align-items: center;
+background: #0B0C10;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 23px;
+transform: rotate(-0.07deg);
+}
+
+.form-box {
+
+
+width: 337px;
+height: 378px;
+
+background: #45A29E;
+border-radius: 23px;
+}
+
+.user-div {
+top:15%;
+left:22%;
+display:flex;
+position: absolute;
+width: 206px;
+height: 54px;
+justify-content: center;
+align-items: center;
+background:#1F2833;
+border-radius: 28px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.userName {
+position: absolute;
+width: 200px;
+height: 48px;
+text-align:center;
+background:#1F2833;
+border-radius: 28px;
+color:white;
+}
+
+
+.pass-div {
+top:30%;
+left:22%;
+display:flex;
+position: absolute;
+width: 206px;
+height: 54px;
+justify-content: center;
+align-items: center;
+background:#1F2833;
+border-radius: 28px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.passWord {
+position: absolute;
+width: 200px;
+height: 48px;
+text-align:center;
+background: #1F2833;
+border-radius: 28px;
+color:white;
+}
+
+
+.checkpass-div {
+top:45%;
+left:22%;
+display:flex;
+position: absolute;
+width: 206px;
+height: 54px;
+justify-content: center;
+align-items: center;
+background:#1F2833;
+border-radius: 28px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.checkPass {
+position: absolute;
+width: 200px;
+height: 48px;
+text-align:center;
+background:#1F2833;
+border-radius: 28px;
+color:white;
+}
+
+
+
+.button {
+top:76%;
+left:36%;
+position: absolute;
+width: 100px;
+height: 32px;
+border-color:whitesmoke;
+border:solid 3px whitesmoke;
+color:whitesmoke;
+text-align: center;
+align-content: center;
+background: #1F2833;
+border-radius: 23px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.checkbox {
+position:absolute;
+top:62%;
+left:22%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+color:#0B0C01;
+font-size:small;
+}
+.checkbox :hover {
+  color:white;
+  animation-delay: 0.3ms;
+}
+
+@media (max-width:800px) { 
+  .nav-container {
+    height:20px;
+    width:auto;
+    display:flex;
+    justify-content:space-between;
+  
+    margin-top:20px;
+    margin-left: 50px;
+    margin-right:50px;
+    
+    
+  }
 }
