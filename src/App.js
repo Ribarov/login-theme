@@ -1,11 +1,17 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+import Navbar from './components/Navbar'
+import Main from './components/Main'
+import Login from './components/Login'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Test</h1>
-    </div>
-  );
+const App = () => {
+    
+    return(
+        <div className="app-container" id="theme">
+            <Navbar />
+            <Login />
+        </div>
+    )
 }
 
-export default App;
+export default App
