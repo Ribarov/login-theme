@@ -1,6 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
-
+import { useState, useContext } from 'react'
+import { ThemeSwitch } from '../App'
 
 const Login = () => {
       const [form, setForm] = useState({
@@ -10,6 +10,7 @@ const Login = () => {
         checkbox:true
     })
     
+    const {theme} = useContext(ThemeSwitch)
     
     const handleInput = (event) => {
         setForm(prevForm => {
@@ -36,7 +37,7 @@ const Login = () => {
     return (
           <div >   
             <form className="form-container" onSubmit={handleSubmit}>
-                <div className="form-box">
+                <div className="form-box" id={theme}>
                   <div className="user-div">
                     <input className="userName"
                         required 
@@ -73,7 +74,7 @@ const Login = () => {
                         />
                         <label htmlFor="checkbox" > I want to join the Newsletter </label>
                   </div>
-                  <button className="button">Sign Up</button>
+                  <button className="button">Login</button>
                   
                 </div>
             </form>
