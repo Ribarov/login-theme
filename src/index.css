@@ -1,4 +1,8 @@
-body {
+html body .app-container > .app-container.div{
+  height:100%;
+}
+
+body  {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,13 +20,23 @@ code {
     monospace;
 }
 
+.app-container{
+  height:100vh;
+}
+#light.app-container{
+  background-color: white;
+}
+#dark.app-container{
+  background-color: #1F2833;
+}
+
 .nav-container {
   height:20px;
   width:auto;
   display:flex;
   justify-content:space-between;
 
-  margin-top:20px;
+  
   margin-left: 120px;
   margin-right:120px;
   
@@ -33,88 +47,17 @@ code {
   display:inline-block;
   justify-content: center;
 }
-.list-container {
-  
-  margin-top:150px;
-  margin-left:70px;
-  display:block;
-  text-align: center;
-  margin-right:70px;
-      
-  
-}
-.list-container li {
-  
-  font-family:sans-serif;
-  font-size: 20px;
-  color:black;
-  margin-top:10px;
-  font-weight:700;
-  text-align:justify;
-  list-style-position: inside;
-  text-overflow:clip;
-      
-}
+
 
 .logoReact{
-  min-height:80px;
-}
-.switch {
-position: relative;
-margin-top:28px;
-display: inline-block;
-width: 60px;
-height: 24px;
-outline: none;
-}
-.switch input {
-position: absolute;
-top: -99999px;
-left: -99999px;
-}
-.slider {
-position: absolute;
-cursor: pointer;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ccc;
--webkit-transition: .4s;
-transition: .4s;
-border-radius: 24px;
-}
-.slider:before {
-position: absolute;
-content: "";
-height: 18px;
-width: 18px;
-left: 4px;
-bottom: 3px;
-background-color: white;
--webkit-transition: .4s;
-transition: .4s;
-border-radius: 50%;
-}
-input:checked + .slider {
-background-color: #2196F3;
-right:3px;
-left: 5px;
-}
-input:focus + .slider {
-box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
--webkit-transform: translateX(26px);
--ms-transform: translateX(26px);
-transform: translateX(26px);
+  height:80px;
 }
 
 .form-container{
 left:50%;
 top:50%;
 margin:auto;
-margin-top:120px;
+margin-top:100px;
 
 display:flex;
 width: 357px;
@@ -127,15 +70,25 @@ border-radius: 23px;
 transform: rotate(-0.07deg);
 }
 
-.form-box {
+#light .form-box {
 
 
 width: 337px;
 height: 378px;
 
-background: #45A29E;
+background: white;
 border-radius: 23px;
 }
+#dark .form-box {
+
+
+  width: 337px;
+  height: 378px;
+  
+  background: #45A29E;
+  border-radius: 23px;
+  }
+  
 
 .user-div {
 top:15%;
@@ -149,9 +102,10 @@ align-items: center;
 background:#1F2833;
 border-radius: 28px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-color:#1F2833;
 }
 
-.userName {
+#dark .userName {
 position: absolute;
 width: 200px;
 height: 48px;
@@ -159,6 +113,18 @@ text-align:center;
 background:#1F2833;
 border-radius: 28px;
 color:white;
+border-color:#1F2833;
+}
+
+#light .userName {
+  position: absolute;
+width: 200px;
+height: 48px;
+text-align:center;
+background:white;
+border-radius: 28px;
+color:black;
+border-color:#1F2833;
 }
 
 
@@ -173,12 +139,12 @@ justify-content: center;
 align-items: center;
 background:#1F2833;
 border-radius: 28px;
-
+border-color:#1F2833;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
-.passWord {
+#dark .passWord {
 position: absolute;
 width: 200px;
 height: 48px;
@@ -186,8 +152,19 @@ text-align:center;
 background: #1F2833;
 border-radius: 28px;
 color:white;
+border-color:#1F2833;
 }
 
+#light .passWord {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  text-align:center;
+  background: white;
+  border-radius: 28px;
+  color:black;
+  border-color:#1F2833;
+  }
 
 .checkpass-div {
 top:45%;
@@ -201,9 +178,10 @@ align-items: center;
 background:#1F2833;
 border-radius: 28px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-color:#1F2833;
 }
 
-.checkPass {
+#dark .checkPass {
 position: absolute;
 width: 200px;
 height: 48px;
@@ -211,11 +189,23 @@ text-align:center;
 background:#1F2833;
 border-radius: 28px;
 color:white;
+border-color:#1F2833;
 }
 
+#light .checkPass {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  text-align:center;
+  background:white;
+  border-radius: 28px;
+  color:black;
+  border-color:#1F2833;
+  }
 
 
-.button {
+
+#dark .button {
 top:76%;
 left:36%;
 position: absolute;
@@ -232,6 +222,23 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
+#light .button {
+  top:76%;
+  left:36%;
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  border-color:#1F2833;
+  border:solid 3px #1F2833;
+  color:black;
+  text-align: center;
+  align-content: center;
+  background: white;
+  border-radius: 23px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  }
+
 .checkbox {
 position:absolute;
 top:62%;
@@ -240,22 +247,78 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 color:#0B0C01;
 font-size:small;
 }
-.checkbox :hover {
+#dark .checkbox :hover {
   color:white;
   animation-delay: 0.3ms;
 }
 
+#dark .react-switch {
+  color:white;
+  top:10px;
+  left:48.5%;
+}
+
+#light .react-switch {
+  color:black;
+  top:10px;
+  left:47.5%;
+}
+.label-container {
+  display: flex;
+  justify-content: center;
+  margin-top:15px;
+}
+
 @media (max-width:800px) { 
+
+  #dark .react-switch {
+    left:45%;
+    margin-top:15px;
+    width:50px;
+  }
+  
+  #light .react-switch {
+    color:black;
+    left:45%;
+    margin-top:15px;
+    width:50px;
+  }
+
+  .logoReact{
+    height:80px;
+  }
   .nav-container {
-    height:20px;
+    
     width:auto;
     display:flex;
     justify-content:space-between;
   
-    margin-top:20px;
+    
     margin-left: 50px;
     margin-right:50px;
+    margin-bottom: 0;
     
     
   }
+#light.app-container{
+    background-color: white;
+  }
+
+  .form-container{
+    left:50%;
+    top:50%;
+    margin:auto;
+    margin-top:60px;
+    
+    display:flex;
+    width: 357px;
+    height: 402px;
+    justify-content:center;
+    align-items: center;
+    background: #0B0C10;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    transform: rotate(-0.07deg);
+    }
+ 
 }
