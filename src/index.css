@@ -24,9 +24,13 @@ code {
   height:100vh;
 }
 #light.app-container{
+  transition-duration: 2s;
+  transition-property: background-color;
   background-color: white;
 }
 #dark.app-container{
+  transition-duration: 2s;
+  transition-property: background-color;
   background-color: #1F2833;
 }
 
@@ -72,20 +76,22 @@ transform: rotate(-0.07deg);
 
 #light .form-box {
 
-
+transition-duration: 2s;
+transition-property: background-color;
 width: 337px;
 height: 378px;
 
-background: white;
+background-color: white;
 border-radius: 23px;
 }
 #dark .form-box {
 
-
+  transition-duration: 2s;
+  transition-property: background-color;
   width: 337px;
   height: 378px;
   
-  background: #45A29E;
+  background-color: #45A29E;
   border-radius: 23px;
   }
   
@@ -110,10 +116,12 @@ position: absolute;
 width: 200px;
 height: 48px;
 text-align:center;
-background:#1F2833;
+background-color:#1F2833;
 border-radius: 28px;
 color:white;
 border-color:#1F2833;
+transition-duration: 2s;
+  transition-property: background-color;
 }
 
 #light .userName {
@@ -121,10 +129,12 @@ border-color:#1F2833;
 width: 200px;
 height: 48px;
 text-align:center;
-background:white;
+background-color:white;
 border-radius: 28px;
 color:black;
 border-color:#1F2833;
+transition-duration: 2s;
+  transition-property: background-color;
 }
 
 
@@ -149,10 +159,12 @@ position: absolute;
 width: 200px;
 height: 48px;
 text-align:center;
-background: #1F2833;
+background-color: #1F2833;
 border-radius: 28px;
 color:white;
 border-color:#1F2833;
+transition-duration: 2s;
+  transition-property: background-color;
 }
 
 #light .passWord {
@@ -160,10 +172,12 @@ border-color:#1F2833;
   width: 200px;
   height: 48px;
   text-align:center;
-  background: white;
+  background-color: white;
   border-radius: 28px;
   color:black;
   border-color:#1F2833;
+  transition-duration: 2s;
+  transition-property: background-color;
   }
 
 .checkpass-div {
@@ -186,10 +200,12 @@ position: absolute;
 width: 200px;
 height: 48px;
 text-align:center;
-background:#1F2833;
+background-color:#1F2833;
 border-radius: 28px;
 color:white;
 border-color:#1F2833;
+transition-duration: 2s;
+  transition-property: background-color;
 }
 
 #light .checkPass {
@@ -197,10 +213,12 @@ border-color:#1F2833;
   width: 200px;
   height: 48px;
   text-align:center;
-  background:white;
+  background-color:white;
   border-radius: 28px;
   color:black;
   border-color:#1F2833;
+  transition-duration: 2s;
+  transition-property: background-color;
   }
 
 
@@ -216,9 +234,11 @@ border:solid 3px whitesmoke;
 color:whitesmoke;
 text-align: center;
 align-content: center;
-background: #1F2833;
+background-color: #1F2833;
 border-radius: 23px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+transition-duration: 2s;
+  transition-property: background-color;
 
 }
 
@@ -233,9 +253,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color:black;
   text-align: center;
   align-content: center;
-  background: white;
+  background-color: white;
   border-radius: 23px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition-duration: 2s;
+  transition-property: background-color;
   
   }
 
@@ -267,6 +289,10 @@ font-size:small;
   display: flex;
   justify-content: center;
   margin-top:15px;
+
+}
+.dark-label {
+  color:white;
 }
 
 @media (max-width:800px) { 
@@ -302,6 +328,8 @@ font-size:small;
   }
 #light.app-container{
     background-color: white;
+    transition-duration: 2s;
+  transition-property: background-color;
   }
 
   .form-container{
@@ -315,10 +343,12 @@ font-size:small;
     height: 402px;
     justify-content:center;
     align-items: center;
-    background: #0B0C10;
+    background-color: #0B0C10;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 23px;
     transform: rotate(-0.07deg);
+    transition-duration: 2s;
+  transition-property: background-color;
     }
  
 }
